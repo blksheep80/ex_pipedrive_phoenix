@@ -1,0 +1,16 @@
+---
+description: Point agents at ExPipedrivePhoenix HANDOFF and project skills at session start
+alwaysApply: true
+---
+
+# ExPipedrivePhoenix project pointers
+
+Before substantial work in this repo:
+
+1. Read `HANDOFF.md`.
+2. Follow project skills when relevant:
+   - `.cursor/skills/ex-pipedrive-phoenix-session/SKILL.md` — resume / what to work on
+   - `.cursor/skills/ex-pipedrive-phoenix-pr/SKILL.md` — `gh` / PRs for this repo
+3. Track execution with beads (`expdp-`); keep GitHub issues on **this** repo as the product backlog.
+4. Ensure `gh repo set-default --view` is `blksheep80/ex_pipedrive_phoenix`.
+5. Do not file this package's work on `blksheep80/ex_pipedrive` or under `expd-`.

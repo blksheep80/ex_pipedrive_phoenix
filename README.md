@@ -83,6 +83,9 @@ Hex: [`ex_pipedrive_phoenix`](https://hex.pm/packages/ex_pipedrive_phoenix).
 
 ## Development
 
+Issue tracking: [beads](https://github.com/steveyegge/beads) via `bd` (prefix `expdp-`).
+GitHub issues on this repo are the product backlog.
+
 ```bash
 mix deps.get
 mix test
