@@ -16,7 +16,17 @@ defmodule ExPipedrivePhoenix.MixProject do
       source_url: @source_url,
       homepage_url: @source_url,
       elixirc_options: [warnings_as_errors: true],
-      start_permanent: Mix.env() == :prod
+      start_permanent: Mix.env() == :prod,
+      test_coverage: [tool: ExCoveralls],
+      preferred_cli_env: [
+        coveralls: :test,
+        "coveralls.detail": :test,
+        "coveralls.post": :test,
+        "coveralls.html": :test,
+        "coveralls.json": :test,
+        "coveralls.lcov": :test,
+        "coveralls.github": :test
+      ]
     ]
   end
 
@@ -30,6 +40,7 @@ defmodule ExPipedrivePhoenix.MixProject do
     [
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:ex_doc, "~> 0.34", only: :dev, runtime: false},
+      {:excoveralls, "~> 0.18", only: :test},
       ex_pipedrive_dep(),
       {:phoenix, "~> 1.7"}
     ] ++ path_dev_pins()

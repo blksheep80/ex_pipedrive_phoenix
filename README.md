@@ -1,5 +1,10 @@
 # ExPipedrivePhoenix
 
+[![Hex.pm](https://img.shields.io/hexpm/v/ex_pipedrive_phoenix.svg)](https://hex.pm/packages/ex_pipedrive_phoenix)
+[![Hex Docs](https://img.shields.io/badge/hex-docs-lightgreen.svg)](https://hexdocs.pm/ex_pipedrive_phoenix/)
+[![CI](https://github.com/blksheep80/ex_pipedrive_phoenix/actions/workflows/elixir.yml/badge.svg)](https://github.com/blksheep80/ex_pipedrive_phoenix/actions/workflows/elixir.yml)
+[![Coverage Status](https://coveralls.io/repos/github/blksheep80/ex_pipedrive_phoenix/badge.svg?branch=main)](https://coveralls.io/github/blksheep80/ex_pipedrive_phoenix?branch=main)
+
 Optional [Phoenix](https://hex.pm/packages/phoenix) helpers for Pipedrive
 **marketplace OAuth install** (authorize redirect + callback). Token exchange
 and `TokenStore` live in core [`ex_pipedrive`](https://hex.pm/packages/ex_pipedrive)
@@ -81,6 +86,9 @@ Hex: [`ex_pipedrive_phoenix`](https://hex.pm/packages/ex_pipedrive_phoenix).
 ```bash
 mix deps.get
 mix test
+mix coveralls
 mix format --check-formatted
 mix credo --strict
 ```
+
+Coverage HTML: `mix coveralls.html` (opens `cover/excoveralls.html`). CI uploads lcov from the primary Elixir 1.17 cell to [Coveralls](https://coveralls.io/github/blksheep80/ex_pipedrive_phoenix) and fails if total coverage drops below 75%.
