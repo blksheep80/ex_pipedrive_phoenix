@@ -16,6 +16,10 @@ Project skills (read when relevant):
 
 - `.cursor/skills/ex-pipedrive-phoenix-session/SKILL.md` — session resume
 - `.cursor/skills/ex-pipedrive-phoenix-pr/SKILL.md` — `gh` / PRs for this repo
+- `.cursor/skills/improve-test-coverage/SKILL.md` — coverage quick-wins
+- `.cursor/skills/hunt-dead-code/SKILL.md` — dead-code audit
+
+Cloud environment: [`.cursor/environment.json`](.cursor/environment.json)
 
 ## Build & Test
 
